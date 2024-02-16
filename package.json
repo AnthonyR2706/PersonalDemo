@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass-loader": "^14.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

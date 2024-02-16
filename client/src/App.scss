@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$Primary: #070a12;
+$Secondary: #0D1221;
+$Tertiary: #c42567;
+$Quartinary: #dbbdc0;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: "Bebas Neue", sans-serif, monospace;
+  font-weight: 400;
+  color: $Tertiary;
+}
+  .app__wrapper {
+    padding-left: calc(100vw - 100%);
+    height: 100vh;
+  }
+  .navBar{
+    position: fixed;
+    background-color: $Primary;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0px;
+    user-select: none;
+    height: 50px;
+    white-space: nowrap;
+    color: $Quartinary;
+    .navBarText {
+        float: left;
+        text-align: center;
+        height: 50px;
+        font-size: 40px;
+        padding-left: 1vw;
+        line-height: 50px; 
+        text-decoration: none;
+        max-width: 25vw;
+        color: $Tertiary;
+      }
+      .navBarTab {
+        background: $Primary;
+        float: right;
+        text-align: center;
+        font-size: 40px;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        height: 50px;
+        line-height: 50px; 
+        text-decoration: none;
+        cursor: pointer;
+        max-width: 100vw;
+        transition: background-color 0.2s ease;
+        .projectTabButton {
+          position: absolute;
+          right: 0;
+        }
+      }
+      .navBarTab:hover{
+        background-color: $Secondary;
+      }
+  }
+  .contentContainer {
+    position: relative;
+    top:50px;
+    background: $Secondary;
+    overflow: auto;
+    height: calc(100% - (50px + 50px));
+    .homeContainer {
+      width: 96%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      .homeText{
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        max-width: 200%;
+        top: 5vh;
+        padding-top: 150px;
+      }
+      .homeHeaderText {
+        font-size: 50px;
+        color: $Quartinary;
+      }
+      .homeSubText {
+        padding-top: 40px;
+        font-size: 40px;
+      }
+    }
+    .projectsContainer {
+      display: flex;
+      width: 100% ;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .projectViewerContainer {
+        display: block;
+        width: 50%;
+        height: 100%;
+        .projectSlideContainer {  
+          height: 100%;
+          text-align: center;
+          overflow: auto;
+          overflow-x: hidden;
+          user-select: none;
+          .previewContainer {
+            padding-top: 100px;
+            .slidePicker {
+              text-align: center;
+              
+            }
+            .previewImgWrap {
+              .previewImg {
+                padding-top: 10px;
+                width: 45vw;  
+              }
+            }
+            .previewLinks {
+              display: flex;
+              height: 50px;
+              padding: 5px;
+              padding-left: 20px;
+              justify-content: center;
+              align-items: center;
+              .visitPreview {
+                border-radius: 0;
+                color: black;
+                padding: 6px 16px;
+                background-color: $Quartinary;
+                border-radius: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                transition: background-color 0.2s ease;
+              }
+              .visitPreview:hover {
+                background-color: $Tertiary;
+              }
+            }
+          }
+        }
+      }
+      .projectTextContainer {
+        display: block;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: auto;
+        overflow-x: hidden;
+        .projectText {
+          width: auto;
+          height: auto;
+          max-height: 100%;
+          padding: 2% 2% 2% 2%;
+          .projectTitle {
+            font-size: 60px;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+          }
+          .projectDescription {
+            font-size: 45px;
+            text-indent: 30px;
+          }
+        }
+      }
+    }
+  }
+  .footerContainer {
+    background: $Primary;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    .homeIcons {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25%; 
+      margin-right: 25%; 
+    }
+  }
+  .linkIcon {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    color: $Quartinary;
+    padding-top: 5px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background: $Quartinary;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+  .active, .dot:hover {
+    background: $Tertiary;
+  }
+  .prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 5px;
+    color: $Quartinary;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+    transition: color 0.2s ease;
+  }
+  .prev:hover, .next:hover{
+    color: $Tertiary;
+  }
+  .next {
+    margin-left: 5px;
+  }
+  .prev {
+    margin-right: 5px;
+  }
+  .buttonDescription {
+    visibility: hidden;
+    width: 100px;
+    background-color: $Tertiary;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 20px;
+    color: $Quartinary  ;
+  }
+  .descriptionTop {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 100%;
+  }
+  .descriptionRight {
+    position: absolute;
+    margin-left: 5px;
+  }
+  .linkIcon:hover .buttonDescription{
+    visibility: visible;
+  }
