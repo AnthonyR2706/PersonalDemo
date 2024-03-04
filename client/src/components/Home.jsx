@@ -10,7 +10,7 @@ const Home = () => {
           <div className='homeSubText'>
             Graduated from Brooklyn college in spring of 2023 with a B.S. in Computer Science
             <br/>
-            Skills: Java, CSS, HTML, Javascript, React, C++
+            Skills: Java, CSS, HTML, Javascript, React, C++, SQL
           </div>
         </div>
     </div>
