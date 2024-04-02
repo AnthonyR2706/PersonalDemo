@@ -63,9 +63,7 @@ const App = () => {
         home: <Home />,
         projects: <Projects PROJECT={PROJECT} getProjectTab={getProjectTab} setProjectTab={setProjectTab} getProject={getProject} setProject={setProject}/>
         }
-    componentDidMount() {
-        document.title = "Anthony Ramanovich";
-    }
+    document.title = 'Anthony Ramanovich';
     
     return (
         <div className='app__wrapper'>
