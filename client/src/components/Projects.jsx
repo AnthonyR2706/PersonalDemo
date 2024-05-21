@@ -25,6 +25,7 @@ const Projects = ({PROJECT, getProjectTab, setProjectTab, getProject, setProject
             <span class={getProjectTab === 2 ? 'active dot' : 'dot'} onClick={() => changeSlide(2)}/>
             <span class={getProjectTab === 3 ? 'active dot' : 'dot'} onClick={() => changeSlide(3)}/>
             <span class={getProjectTab === 4 ? 'active dot' : 'dot'} onClick={() => changeSlide(4)}/>
+            <span class={getProjectTab === 4 ? 'active dot' : 'dot'} onClick={() => changeSlide(4)}/>
             <a class='next' onClick={() => changeSlide(getProjectTab + 1)}>&#10095;</a>
           </div>
         </div>

@@ -6,12 +6,22 @@ import DrumMachine from './assets/DrumMachine.png'
 import RandomQuote from './assets/RandomQuote.png'
 import MarkdownPreview from './assets/MarkdownPreview.png'
 import Calculator from './assets/Calculator.png'
+import PaymentTracker from './assets/PaymentTracker.png'
 
 const App = () => {
 
     const [getTab, setTab] = useState('home')
     const [getProjectTab, setProjectTab] = useState(0)
     const PROJECT = [
+        {
+            preview: <Preview 
+                        img={PaymentTracker}
+                        link="https://anthonyr2706.github.io/PaymentTracker/"
+                        gLink="https://github.com/AnthonyR2706/PaymentTracker"
+                    />,
+            title: "Payment Tracker",
+            description: "Allows users to create accounts and access their own payment trackers. They can then add, delete, and edit entries. The entries are stored on MongoDB"
+        },
         {
             preview: <Preview 
                         img={SessionTimer}
