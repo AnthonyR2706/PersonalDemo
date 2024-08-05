@@ -8,9 +8,13 @@ const Home = () => {
             Hello, I am Anthony Ramanovich
           </div>
           <div className='homeSubText'>
+            In my free time I enjoy cooking, reading, and tabletop gaming
+            <br/>
+            To me programming is really enjoyable and I would love to further develop my Skills
+            <br/>
             Graduated from Brooklyn college in spring of 2023 with a B.S. in Computer Science
             <br/>
-            Skills: Java, CSS, HTML, Javascript, React, C++, SQL
+            Skills: Java, CSS, HTML, Javascript, React, C++, Python, SQL
           </div>
         </div>
     </div>
