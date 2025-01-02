@@ -14,7 +14,7 @@ const Home = () => {
             <br/>
             Graduated from Brooklyn college in spring of 2023 with a B.S. in Computer Science
             <br/>
-            Skills: Java, CSS, HTML, Javascript, React, C++, Python, SQL
+            Skills: Java, CSS, HTML, Javascript, React, C, C++, Python, SQL
           </div>
         </div>
     </div>
